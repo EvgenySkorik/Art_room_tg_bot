@@ -2,8 +2,9 @@ import telebot
 from telebot import types
 import random
 from datetime import datetime
+import os
 
-bot = telebot.TeleBot('6691657677:AAGXrGHx5FbR9byyd0CcSnTUQ1G59ZOw-Os')
+bot = telebot.TeleBot(os.getenv('TG_API_KEY'))
 COUNTER = 0
 
 

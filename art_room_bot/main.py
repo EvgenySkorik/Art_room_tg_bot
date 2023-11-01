@@ -1,9 +1,9 @@
 import telebot
 from telebot import types
-
+import os
 from handler_bot import FuncInterface
 
-bot = telebot.TeleBot('6691657677:AAGXrGHx5FbR9byyd0CcSnTUQ1G59ZOw-Os')
+bot = telebot.TeleBot(os.getenv('TG_API_KEY'))
 
 func = FuncInterface()
 
